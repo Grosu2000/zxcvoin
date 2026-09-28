@@ -17,6 +17,7 @@ public final class Menu {
         System.out.println(" 5. Power (^)");
         System.out.println(" 6. Modulus (%)");
         System.out.println(" 7. Square root");
+        System.out.println(" 9. Sine");
         System.out.println(" 0. Exit");
         System.out.println("========================================");
     }

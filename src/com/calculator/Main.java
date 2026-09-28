@@ -1,9 +1,9 @@
 package com.calculator;
 
 import com.calculator.operations.AddSub;
+import com.calculator.operations.AdvancedMath;
 import com.calculator.operations.MulDiv;
 import com.calculator.operations.PowMod;
-import com.calculator.operations.AdvancedMath;
 import java.util.Scanner;
 
 public class Main {
@@ -76,6 +76,9 @@ public class Main {
                         break;
                     case 6:
                         result = PowMod.modulus(a, b);
+                        break;
+                    case 9:
+                        result = AdvancedMath.sin(a);
                         break;
                     default:
                         throw new IllegalArgumentException("Unknown operation");
