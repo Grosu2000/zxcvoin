@@ -3,7 +3,7 @@ package com.calculator;
 import com.calculator.operations.AddSub;
 import com.calculator.operations.MulDiv;
 import com.calculator.operations.PowMod;
-
+import com.calculator.operations.AdvancedMath;
 import java.util.Scanner;
 
 public class Main {
@@ -70,6 +70,9 @@ public class Main {
                         break;
                     case 5:
                         result = PowMod.power(a, b);
+                        break;
+                    case 7:
+                        result = AdvancedMath.sqrt(a);
                         break;
                     case 6:
                         result = PowMod.modulus(a, b);
