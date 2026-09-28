@@ -1,0 +1,28 @@
+﻿repos:
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v4.5.0
+    hooks:
+      - id: trailing-whitespace
+        exclude: \.gitattributes$
+      - id: end-of-file-fixer
+        exclude: \.gitattributes$
+      - id: check-yaml
+      - id: check-merge-conflict
+      - id: mixed-line-ending
+        exclude: \.gitattributes$
+
+  - repo: https://github.com/compilerla/conventional-pre-commit
+    rev: v3.0.0
+    hooks:
+      - id: conventional-pre-commit
+        stages: [commit-msg]
+        args: [feat, fix, docs, style, refactor, perf, test, build, ci, chore, revert]
+
+  - repo: local
+    hooks:
+      - id: javac-compile
+        name: Java compile check
+        entry: cmd /c build.bat
+        language: system
+        files: \.java$
+        pass_filenames: false
