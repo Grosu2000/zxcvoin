@@ -11,4 +11,10 @@ public final class AdvancedMath {
         }
         return Math.sqrt(a);
     }
+    public static double log(double a) {
+        if (a <= 0) {
+            throw new ArithmeticException("Logarithm of non-positive number is not allowed");
+        }
+        return Math.log(a);
+    }
 }

@@ -32,7 +32,7 @@ public class Main {
                 continue;
             }
 
-            if (choice < 1 || choice > 6) {
+            if (choice < 1 || choice > 8) {
                 System.out.println("Error: invalid choice.");
                 continue;
             }
@@ -76,6 +76,9 @@ public class Main {
                         break;
                     case 6:
                         result = PowMod.modulus(a, b);
+                        break;
+                    case 8:
+                        result = AdvancedMath.log(a);
                         break;
                     default:
                         throw new IllegalArgumentException("Unknown operation");
