@@ -7,9 +7,9 @@ public final class Menu {
 
     public static void show() {
         System.out.println();
-        System.out.println("========================================");
-        System.out.println("        CONSOLE CALCULATOR v1.0.0");
-        System.out.println("========================================");
+        System.out.println("=========================================================");
+        System.out.println("              CONSOLE CALCULATOR v1.0.0");
+        System.out.println("=========================================================");
         System.out.println(" 1. Addition (+)");
         System.out.println(" 2. Subtraction (-)");
         System.out.println(" 3. Multiplication (*)");
@@ -18,8 +18,8 @@ public final class Menu {
         System.out.println(" 6. Modulus (%)");
         System.out.println(" 7. Square root");
         System.out.println(" 8. Logarithm");
+        System.out.println(" 9. Sine");
         System.out.println(" 0. Exit");
-        System.out.println("========================================");
+        System.out.println("=========================================================");
     }
 }
-// test
