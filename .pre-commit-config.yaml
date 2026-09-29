@@ -9,7 +9,7 @@
       - id: check-yaml
       - id: check-merge-conflict
       - id: mixed-line-ending
-        exclude: \.gitattributes$
+        exclude: \.gitattributes$|COMMIT_EDITMSG
 
   - repo: https://github.com/compilerla/conventional-pre-commit
     rev: v3.0.0
@@ -25,4 +25,19 @@
         entry: cmd /c build.bat
         language: system
         files: \.java$
+        pass_filenames: false
+      - id: pre-push-compile
+        name: Compile before push
+        entry: cmd /c build.bat
+        language: system
+        stages: [pre-push]
+        pass_filenames: false
+
+  - repo: local
+    hooks:
+      - id: prepare-commit-msg-author
+        name: Add author to commit message
+        entry: python scripts/prepare_commit_msg.py
+        language: python
+        stages: [prepare-commit-msg]
         pass_filenames: false
