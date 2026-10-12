@@ -1,0 +1,19 @@
+# Default owners — team lead
+* @grosu2000
+
+# Documentation
+docs/ @grosu2000
+README.md @grosu2000
+LICENSE @grosu2000
+*.md @grosu2000
+
+# Source code
+src/ @xel1st
+
+# Contributing & Infrastructure
+CONTRIBUTING.md @grymail
+.pre-commit-config.yaml @grymail
+.github/ @grymail
+scripts/ @grymail
+build.bat @grymail
+run.bat @grymail

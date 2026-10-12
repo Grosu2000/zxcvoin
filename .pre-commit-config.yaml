@@ -26,3 +26,10 @@
         language: system
         files: \.java$
         pass_filenames: false
+
+
+  - repo: https://github.com/igorshubovych/markdownlint-cli
+    rev: v0.39.0
+    hooks:
+      - id: markdownlint
+        args: ["--fix"]
